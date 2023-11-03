@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receive Order</title>
+
+  <link rel="stylesheet" href="receive.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="receive-order-form">
+      <h2>Parcel <span class = "title-cust">Receiving</span></h2>
+      <p class="Ques">Are you a customer ?</p>
+      <div class="radio-btn">
+        <div class="yes-btn">
+          <input type="radio" id="yes" name="customer" value="yes">
+          <label for="yes">Yes</label>
+        </div>
+
+        <div class="no-btn">
+          <input type="radio" id="no" name="customer" value="no">
+          <label for="no">No</label>
+        </div>
+      </div>
+
+      <div class="inputs">
+        <div class="input-container">
+          <p>Enter your name</p>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="tel" placeholder="Name" required>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <p>Enter valid package number</p>
+          <div class="input-field">
+            <i class="fa-solid fa-hashtag"></i>
+            <input type="tel" placeholder="Package Number" required>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <button class = "btn transparent">Submit</button>
+  </div>
+
+</body>
+
+
+
+</html>
