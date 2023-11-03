@@ -1,7 +1,14 @@
 // Product Part 
 // -----------------------------------------------
 
-// Filling products 
+// Filling products
+
+const Products = [
+  'HTML & CSS',
+  'React JS',
+  'Next JS',
+  'MongoDB'
+]
 
 for (let i = 0; i < Products.length; i++) {
   const li = document.createElement('li');

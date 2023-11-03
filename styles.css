@@ -93,6 +93,7 @@ form p {
   position: relative;
   max-width: 380px;
   width: 100%;
+  overflow: visible;
 }
 
 .select-box .input-field {
@@ -389,4 +390,135 @@ form p {
 .container.payorder-mode form.payorder-form {
   z-index: 2;
   opacity: 1;
+}
+
+/* Media queries */
+
+@media (max-width: 870px) {
+  .container {
+    min-height: 800px;
+    height: 100vh;
+  }
+
+  .container:before{
+    width: 1500px;
+    height: 1500px;
+    left: 30%;
+    bottom: 68%;
+    transform: translateX(-50%);
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+  .signin-payorder {
+    width: 100%;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -100%);
+    transition: 1s 0.8s ease-in-out;
+  }
+
+  .panels-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+  }
+
+  .panel {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem 8%;
+  }
+
+  .panel .content {
+    padding-right: 15%;
+    transition: 0.9s 0.8s ease-in-out;
+  }
+
+  .panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .panel p {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+    margin-bottom: 10px;
+  }
+
+  .btn.transparent {
+    width: 130px;
+    height: 100%;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+
+  .img {
+    width: 200px;
+    transition: 0.9s 0.6s ease-in-out;
+  }
+
+  .left-panel {
+    grid-row: 1 / 2;
+  }
+
+  .right-panel {
+    grid-row: 3 / 4;
+  }
+  
+  .right-panel .panel-content, .right-panel .img {
+  transform: translateY(300px);
+  }
+
+  .container.payorder-mode:before {
+    transform: translate(-50%, 100%);
+    bottom: 30%;
+    right: initial;
+  }
+
+  .container.payorder-mode .left-panel .img,
+  .container.payorder-mode .left-panel .content {
+    transform: translateY(-300px);
+  }
+
+  .container.payorder-mode .signin-payorder {
+    top: 5%;
+    transform: translate(-50%, 0);
+    left: 50%;
+  }
+
+  .payorder-form h2{
+    margin-bottom: 15px;
+  }
+
+  .payorder-input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 570px) {
+  form {
+    padding: 0 1.5rem;
+  }
+
+  .img {
+    display: none;
+  }
+
+  panel .content {
+    padding: 0.5rem 1rem;
+  }
+
+  .container:before {
+    bottom: 72%;
+    left: 50%;
+  }
+
+  .container.payorder-mode:before {
+    bottom: 28%;
+    left: 50%;
+  }
 }
