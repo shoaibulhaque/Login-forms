@@ -22,7 +22,7 @@ body, input, textarea {
   width: 100%;
   min-height: 100vh;
   background-color: #fff;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .container:before {
@@ -531,7 +531,7 @@ form p {
   }
 
   .container:before {
-    bottom: 72%;
+    bottom: 75%;
     left: 50%;
   }
 
