@@ -500,6 +500,14 @@ form p {
 }
 
 @media (max-width: 570px) {
+  #sign-in-Btn {
+    width: 360px;
+  }
+
+  #proceed {
+    width: 360px;
+  }
+
   form {
     padding: 0 1.5rem;
   }
@@ -508,8 +516,16 @@ form p {
     display: none;
   }
 
-  panel .content {
-    padding: 0.5rem 1rem;
+  .right-panel {
+    display: none;
+  }
+
+  .payorder-form {
+    margin-bottom: 60px;
+  }
+
+  .payorder-form h2 {
+    margin-bottom: 5px;
   }
 
   .container:before {
@@ -518,7 +534,12 @@ form p {
   }
 
   .container.payorder-mode:before {
-    bottom: 28%;
-    left: 50%;
+    display: none;
+  }
+
+  .payorder-input-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 5px;
+    gap: 0;
   }
 }
