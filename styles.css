@@ -542,5 +542,6 @@ form p {
   .payorder-input-container {
     grid-template-columns: 1fr;
     margin-bottom: 5px;
+    gap: 0;
   }
 }
