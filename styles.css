@@ -502,7 +502,9 @@ form p {
 
 @media (max-width: 570px) {
   #sign-in-Btn {
-    width: 360px;
+    width: 350px;
+    height: 45px;
+    font-size: 0.7rem;
   }
 
   #proceed {
@@ -547,5 +549,9 @@ form p {
 
   .payorder-input-container .input-field {
     height: 40px;
+  }
+
+  .payorder-form p {
+    font-size: 0.7rem;
   }
 }
