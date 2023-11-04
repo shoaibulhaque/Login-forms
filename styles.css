@@ -241,7 +241,7 @@ form p {
 
 .input-field i{
   text-align: center;
-  line-height: 55px;
+  line-height: 40px;
   color: #acacac;
   font-size: 0.8rem;
 }
@@ -543,5 +543,9 @@ form p {
     grid-template-columns: 1fr;
     margin-bottom: 5px;
     gap: 0;
+  }
+
+  .payorder-input-container .input-field {
+    height: 40px;
   }
 }
