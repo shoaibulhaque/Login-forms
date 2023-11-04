@@ -555,6 +555,10 @@ form p {
     height: 40px;
   }
 
+  .payorder-input-container .input-field i{
+    line-height: 40px;
+  }
+
   .payorder-form p {
     font-size: 0.7rem;
   }
