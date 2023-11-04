@@ -22,7 +22,7 @@ body, input, textarea {
   width: 100%;
   min-height: 100vh;
   background-color: #fff;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .container:before {
