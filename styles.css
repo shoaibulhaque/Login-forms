@@ -496,6 +496,7 @@ form p {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-bottom: 20px;
+    margin-inline: 10px;
   }
 }
 
@@ -540,6 +541,5 @@ form p {
   .payorder-input-container {
     grid-template-columns: 1fr;
     margin-bottom: 5px;
-    gap: 0;
   }
 }
